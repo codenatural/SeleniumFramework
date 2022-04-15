@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AUT" verbose="2" >
+  <test thread-count="4" name="saucefirefox" allow-return-values="true" parallel="true">
+  <parameter name="browser" value="FIREFOX"/>
+    <classes>
+       <class name="apptest.SauceDemo"/>
+    </classes>
+  </test>
+
+<test thread-count="4" name="saucechrome" allow-return-values="true" parallel="true">
+  <parameter name="browser" value="CHROME"/>
+    <classes>
+       <class name="apptest.SauceDemo"/>
+    </classes>
+  </test>
+</suite>
+
+
+
